@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.acti.base.DriverScript">
+      <class name="com.acti.testcase.TestLoginPage">
         <methods>
-          <include name="initBrowser"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="beforeTest"/>
+          <include name="veriyActiLogo"/>
+          <include name="validateLoginFunctionality"/>
         </methods>
-      </class> <!-- com.acti.base.DriverScript -->
+      </class> <!-- com.acti.testcase.TestLoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
